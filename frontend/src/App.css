@@ -1,0 +1,9 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: white;
+  color: black; /* Opcional: texto negro para contraste */
+  font-family: 'Calibri', sans-serif; 
+}
