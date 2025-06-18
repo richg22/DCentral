@@ -7,3 +7,29 @@ body, html, #root {
   color: black; /* Opcional: texto negro para contraste */
   font-family: 'Calibri', sans-serif; 
 }
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.info-block {
+  flex: 1;
+  min-width: 280px;
+}
+
+.info-section_2 {
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
