@@ -1,24 +1,27 @@
-import './Navbar.css'; 
+import './Navbar.css';
 import React from 'react';
-import { Link } from 'react-router-dom'; // <-- ESTA LÍNEA FALTABA
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  console.log("Navbar cargado");
+  const navigate = useNavigate();
+
+  const irAInicio = () => navigate('/');
+  const irAPersonas = () => navigate('/personas');
+  const irATramos = () => navigate('/tramos');
+
   return (
     <nav className="navbar">
-     
-
-        <div className="navbar-logo">  
-                <img src="src/images/xd2.png" alt="Imagen 1" width="50px" height="50px"/>
-             Data Central </div>
-
-        <ul className="navbar-links">
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/personas">Personas</Link></li>
-            <li><Link to="/tramos">Tramos</Link></li>
-        </ul>
-    </nav>  
+      <div className="navbar-logo">
+        <img src="src/images/xd2.png" alt="logo" width="50px" height="50px" />
+        Data Central
+      </div>
+      <div className="navbar-links">
+        <button onClick={irAInicio}>Inicio</button>
+        <button onClick={irAPersonas}>Personas</button>
+        <button onClick={irATramos}>Tramos</button>
+      </div>
+    </nav>
   );
-}
+};
 
 export default Navbar;
