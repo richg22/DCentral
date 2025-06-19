@@ -1,19 +1,19 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './home';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Personas from './pages/personas';
-import Tramos from './pages/tramos';
+import Home from './pages/Home';
+import Personas from './pages/Personas';
+import Tramos from './pages/Tramos';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/personas" element={<Personas />} />
         <Route path="/tramos" element={<Tramos />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
