@@ -2,6 +2,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './App.css';
 import Navbar from './components/Navbar';
+import { Link } from 'react-router-dom';
+
 
 function Carrusel() {
   return (
